@@ -9,11 +9,11 @@ image: /assets/images/S400SX%20Turbocharger.png
 image: /assets/images/S400SX_Compressor%20Maps.png
 ---
 
-<span style="font-size: 2em;"><strong>Introduction to Turbocharger, S400SX</strong></span>\
+<span style="font-size: 2.5em;"><strong>Introduction to Turbocharger, S400SX</strong></span>\
 \
 A turbocharger is a centrifugal compressor powered by a turbine, designed to increase an internal combustion engine's efficiency. Turbochargers force more air into the internal combustion engine so that it produces more power under the given piston displacement of the engine, which is a form of forced induction. In this report, I analyzed the turbocharger’s process through its thermodynamic modeling using steady state energy balance, mass balance, and isentropic ideal gas relations. Specifically, I analyzed and used data of the BorgWarner S400SX, which is a turbocharger engineered to handle massive mass flow rates and high-pressure ratios and used in competitive motorsports. 
 
-<span style="font-size: 2em;"><strong>Qualitative Analysis of Turbochargers and Their Usage</strong></span>\
+<span style="font-size: 2.5em;"><strong>Qualitative Analysis of Turbochargers and Their Usage</strong></span>\
 \
 In order to increase its power output and efficiency, lots of internal combustion engine uses forced induction to deliver compressed air to their intake. Gas compressors, such as turbochargers and superchargers, are used to increase the pressure, temperature, and density of air in a forced induction engine. Turbochargers are one type of compressor often used for internal combustion engines, and they recover the thermal and kinetic energy from the engine’s exhaust gases that would otherwise be wasted. In a turbocharger, two radial airfoils rotate for its operation, one of which is a turbine blade and the other is a compressor blade. The turbine blade on the turbocharger extracts thermal and kinetic energy from the exhaust gases, which have a high temperature, and convert into mechanical shaft work, delivering the work to the compressor blade through the crankshaft between the compressor blade and the turbine blade. Then, the compressor blade increases the pressure, temperature, and density of the input air into the engine’s combustion chamber, which enhances the engine’s efficiency and the magnitude of power output. 
 
@@ -22,7 +22,7 @@ In order to increase its power output and efficiency, lots of internal combustio
 
 Since in a naturally aspirated engine, approximately one-third of the fuel's chemical energy is lost as thermal waste through the exhaust, and turbochargers exploit the portion of this wasted enthalpy, turbochargers are used in many fields that require high performance of the internal combustion engine, such as motorsports, high-performance commercial automobiles, lightweight aircraft, and industrial fields. The BorgWarner S400SX turbocharger is commonly used in high-performance and heavy-duty engines due to its large compressor flow capacity and high-pressure ratio capability.
 
-<span style="font-size: 2em;"><strong>Thermodynamic Modeling of the Turbocharger</strong></span>
+<span style="font-size: 2.5em;"><strong>Thermodynamic Modeling of the Turbocharger</strong></span>
 
 
 ![Turbocharger System Diagram](/assets/images/Turbocharger_System%20Diagram.png)
@@ -86,7 +86,7 @@ $$\dot{m}_{\text{corr}} = \dot{m}_a \sqrt{\frac{T_{\text{c,in}}}{T_{\text{ref}}}
 
 $$\dot{m}_a = \dot{m}_{\text{corr}} \sqrt{\frac{T_{\text{ref}}}{T_{\text{c,in}}}} \cdot \left( \frac{P_{\text{c,in}}}{P_{\text{ref}}} \right)$$
 
-<span style="font-size: 2em;"><strong>Specific Turbocharger, S400SX, Data and Modeling</strong></span>
+<span style="font-size: 2.5em;"><strong>Specific Turbocharger, S400SX, Data and Modeling</strong></span>
  \
  \
 The turbocharger’s steady-state thermodynamic model, which I’ve elaborated above, can be applied to the S400SX turbocharger using publicly available compressor map data. Key physical quantities of the turbocharger, such as mass flow rate, compressor outlet temperature, compressor power, and required turbine power, can be calculated using the thermodynamic model above.\
