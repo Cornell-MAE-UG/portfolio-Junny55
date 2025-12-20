@@ -3,7 +3,7 @@ layout: project
 title: Turbocharger Analysis MAE 2210 Thermodynamics
 description: By Junseok Kang_jk2964
 technologies:
-image: /assets/images/A-schematic-of-a-turbocharging-system.png
+image: /fa25-portfolio-Junny55/assets/images/A-schematic-of-a-turbocharging-system.png
 ---
 
 <span style="font-size: 1.5em;"><strong>Introduction to Turbocharger, S400SX</strong></span>\

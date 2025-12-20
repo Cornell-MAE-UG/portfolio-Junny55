@@ -3,7 +3,7 @@ layout: project
 title: Heat Exchnager Lab
 description: Class project
 technologies:
-image: /assets/images/Picture1.png
+image: /fa25-portfolio-Junny55/assets/images/Picture1.png
 ---
 
 The plate heat exchanger used in this activity consists of two separate flow paths, labeled 1–2 and 3–4, through which hot and cold water circulate without mixing. Hot water from a bucket heated by the heater is pumped through one flow path, while cold water from an ice-cooled reservoir flows through the other. The fluids pass through alternating channels separated by thin metal plates, allowing heat to transfer through conduction across the plates and convection within each flowing stream. Thermometers placed in each reservoir measures the inlet and outlet temperatures, and food dye helps distinguish the two streams. When the pumps run, heat flows from the hotter water to the colder water, increasing the cold stream’s temperature while decreasing the hot stream’s temperature.
