@@ -3,7 +3,7 @@ layout: project
 title: Turbocharger Analysis MAE 2210 Thermodynamics
 description: By Junseok Kang_jk2964
 technologies:
-image: /fa25-portfolio-Junny55/assets/images/A-schematic-of-a-turbocharging-system.png
+image: /assets/images/A-schematic-of-a-turbocharging-system.png
 ---
 
 <span style="font-size: 1.5em;"><strong>Introduction to Turbocharger, S400SX</strong></span>\
@@ -22,7 +22,7 @@ Since in a naturally aspirated engine, approximately one-third of the fuel's che
 <span style="font-size: 1.5em;"><strong>Thermodynamic Modeling of the Turbocharger</strong></span>
 
 
-![Turbocharger System Diagram](/fa25-portfolio-Junny55/assets/images/Turbocharger_System%20Diagram.png)
+![Turbocharger System Diagram](/fa25-portfolio-Junny55/assets/images/Turbocharger_System_Diagram.png)
 *Figure 2: Turbocharger system diagram.*
 
 **1.	Mass & Energy Balance in the Turbocharger’s Turbine**\
@@ -88,10 +88,10 @@ $$\dot{m}_a = \dot{m}_{\text{corr}} \sqrt{\frac{T_{\text{ref}}}{T_{\text{c,in}}}
  \
 The turbocharger’s steady-state thermodynamic model, which I’ve elaborated above, can be applied to the S400SX turbocharger using publicly available compressor map data. Key physical quantities of the turbocharger, such as mass flow rate, compressor outlet temperature, compressor power, and required turbine power, can be calculated using the thermodynamic model above.\
 
-![S400SX Turbocharger](/fa25-portfolio-Junny55/assets/images/S400SX%20Turbocharger.png)
+![S400SX Turbocharger](/fa25-portfolio-Junny55/assets/images/S400SX_Turbocharger.png)
 *Figure 3: BorgWarner S400SX turbocharger.*
 
-![S400SX Compressor Maps](/fa25-portfolio-Junny55/assets/images/S400SX_Compressor%20Maps.png)
+![S400SX Compressor Maps](/fa25-portfolio-Junny55/assets/images/S400SX_Compressor_Maps.png)
 *Figure 4: S400SX compressor maps.*
 
 From the S400SX compressor map available online, I could select a typical mid-efficiency operating point (400-900HP):
@@ -144,7 +144,7 @@ $$\Delta T_c = T_2 - T_1 = 445.7 - 298 = 146.5 \, \mathrm{K} \approx \Delta T_t 
 This calculation shows that the exhaust temperature drop due to the turbocharger turbine and the inlet gas temperature increases due to the turbocharger compressor match their value, which was expected by the model. Furthermore, the exhaust temperature drop due to the turbocharger usually ranges between 150K and 200K, which implies that the thermodynamic model of the turbocharger in this report is plausible. 
 
 
-<span style="font-size: 1.5em;"><strong>Turbocharger VS Supercharger</strong></span>\
+<span style="font-size: 1.5em;"><strong>Turbocharger VS Supercharger</strong></span>
 
 A turbocharger usually has higher efficiency than a supercharger, which is another type of compressor that is commonly used for internal combustion engines to enhance the engine’s efficiency under piston displacement constraints. Both turbocharger and supercharger induce forced induction, which means both compress the input air of the internal combustion engine, allowing the engine to get more oxygen, which helps it to run more efficiently as a result. However, Turbochargers and superchargers differ primarily in the way they generate power. As discussed above, turbochargers exploit thermal and kinetic energy of the exhaust gas through the turbine blades and convert it to mechanical work, which will be used to compress the inlet air via the compressor blades. Unlike a turbocharger, a supercharger’s crankshaft is directly connected via gear or belt to the crankshaft of the internal combustion engine, meaning the net work output of the engine is reduced by the work required to drive the supercharger. The thermodynamic energy balance for a supercharged engine is expressed as:
 
