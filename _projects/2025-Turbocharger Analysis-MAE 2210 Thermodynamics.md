@@ -28,7 +28,7 @@ Since in a naturally aspirated engine, approximately one-third of the fuel's che
 ![Turbocharger System Diagram](/assets/images/Turbocharger_System%20Diagram.png)
 *Figure 2: Turbocharger system diagram.*
 
-**1.	Mass & Energy Balance in the Turbocharger’s Turbine**
+**1.	Mass & Energy Balance in the Turbocharger’s Turbine**/
 Steady State Mass Balance:
 
 $$\dot{m}_t = \dot{m}_{\text{t,in}} - \dot{m}_{\text{t,out}} = 0$$
@@ -49,7 +49,7 @@ For a turbocharger, since the turbine and the compressor are directly connected 
 
 $$\dot{W}_t \approx -\dot{W}_c$$
 
-**2. Mass & Energy Balance in the Turbocharger’s Compressor**
+**2. Mass & Energy Balance in the Turbocharger’s Compressor**/
 Steady State Mass Balance:
 
 $$\dot{m}_c = \dot{m}_{\text{c,in}} - \dot{m}_{\text{c,out}} = 0$$
@@ -68,7 +68,7 @@ $$\dot{W}_c = \dot{m}_a c_p (T_1 - T_2) = -\dot{m}_{\text{exh}} c_p (T_{\text{t,
 
 $$T_2 = T_1 - \frac{\dot{m}_{\text{exh}}}{\dot{m}_a} (T_{\text{t,in}} - T_{\text{t,out}})$$
 
-**3. Calculate Compressor Outlet Temperature**
+**3. Calculate Compressor Outlet Temperature**/
 Let’s assume adiabatic compression in the turbocharger compressor as above, and assume the air in the process acts like an ideal gas. Therefore, we can use the isentropic ideal gas relation to calculate the isentropic compressor output temperature based on the pressure ratio of the turbocharger and the specific heat ratio of the air.\
 Isentropic compressor outlet temperature:
 
