@@ -1,6 +1,6 @@
 ---
 layout: project
-title: Turbocharger Analysis_MAE 2210 Thermodynamics
+title: Turbocharger Analysis MAE 2210 Thermodynamics
 description: By Junseok Kang_jk2964
 technologies:
 image: /assets/images/A-schematic-of-a-turbocharging-system.png
