@@ -26,14 +26,24 @@ Since in a naturally aspirated engine, approximately one-third of the fuel's che
 
 1.	Mass & Energy Balance in the Turbocharger’s Turbine\
 Steady State Mass Balance:\
-$$\dot{m}_t = \dot{m}_{(t,in)} - \dot{m}_{(t,out)} = 0$$\
-$$\dot{m}_{(t,in)} = \dot{m}_{(t,out)} = \dot{m}_{exh}$$
+$$
+\dot{m}_t = \dot{m}_{(t,in)} - \dot{m}_{(t,out)} = 0
+$$/
+$$
+\dot{m}_{(t,in)} = \dot{m}_{(t,out)} = \dot{m}_{exh}
+$$
 
 Steady State Energy Balance, assuming the turbocharger’s turbine is in an adiabatic process and assuming c_p is constant for the air in the process:\
-$$ \dot{Q}_t = 0 $$\
-$$ \dot{E}_t = \dot{Q}_t - \dot{W}_t + \dot{m}_{exh} (h_{(t,in)} - h_{(t,out)}) = - \dot{W}_t + \dot{m}_{exh} c_p (T_{(t,in)} - T_{(t,out)}) = 0 $$\
+$$
+\dot{Q}_t = 0 
+$$\
+$$
+ \dot{E}_t = \dot{Q}_t - \dot{W}_t + \dot{m}_{exh} (h_{(t,in)} - h_{(t,out)}) = - \dot{W}_t + \dot{m}_{exh} c_p (T_{(t,in)} - T_{(t,out)}) = 0 
+ $$\
 Thus, we can see that the turbine power comes from exhaust enthalpy:\
-$$ \dot{W}_t = \dot{m}_{exh} c_p (T_{(t,in)} - T_{(t,out)}) $$
+$$
+ \dot{W}_t = \dot{m}_{exh} c_p (T_{(t,in)} - T_{(t,out)}) 
+ $$
 
 For a turbocharger, since the turbine and the compressor are directly connected through a crankshaft, the mechanical work will be transferred from the turbine to the compressor. Moreover, since the turbine power output is the power input for the compressor, the sign is positive for turbine power but should be negative for the compressor power:\
 $$ W_t \approx -W_c $$
