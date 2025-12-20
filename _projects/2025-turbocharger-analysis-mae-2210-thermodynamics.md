@@ -77,7 +77,7 @@ $$T_2 = T_1 \left[ 1 + \frac{1}{\eta_c} \left( \Pi_c^{\frac{k-1}{k}} - 1 \right)
 
 Since S400SX maps use corrected airflow, I had to convert the corrected airflow into the actual airflow that is input to the turbocharger compressor, where 
 
-$$T_{\text{ref}} = 288 \text{ K}$ and $P_{\text{ref}} = 101.3 \text{ kPa}$$ :
+$$T_{\text{ref}} = 288 \text{ K}$$ and $$P_{\text{ref}} = 101.3 \text{ kPa}$$ :
 
 $$\dot{m}_{\text{corr}} = \dot{m}_a \sqrt{\frac{T_{\text{c,in}}}{T_{\text{ref}}}} \cdot \left( \frac{P_{\text{ref}}}{P_{\text{c,in}}} \right)$$
 
@@ -96,19 +96,19 @@ The turbocharger’s steady-state thermodynamic model, which I’ve elaborated a
 
 From the S400SX compressor map available online, I could select a typical mid-efficiency operating point (400-900HP):
 
-$$\Pi_c = 3.2$$
-$$\dot{m}_{\mathrm{corr}} = 72 \, \frac{\mathrm{lb}}{\mathrm{min}} = 0.54 \, \frac{\mathrm{kg}}{\mathrm{s}}$$
+$$\Pi_c = 3.2$$\
+$$\dot{m}_{\mathrm{corr}} = 72 \, \frac{\mathrm{lb}}{\mathrm{min}} = 0.54 \, \frac{\mathrm{kg}}{\mathrm{s}}$$\
 $$\eta_c = 0.74$$
 
 Initial conditions I set:
 
-$$P_1 = 1 \, \mathrm{atm} = 101.3 \, \mathrm{kPa}$$
-$$T_1 = 25^\circ \mathrm{C} = 298 \, \mathrm{K}$$
+$$P_1 = 1 \, \mathrm{atm} = 101.3 \, \mathrm{kPa}$$\
+$$T_1 = 25^\circ \mathrm{C} = 298 \, \mathrm{K}$$\
 $$P_{\mathrm{ref}} = 101.3 \, \mathrm{kPa}, \, T_{\mathrm{ref}} = 288 \, \mathrm{K}$$
 
 Thermodynamic constants I used, assuming the air in the process acts like an ideal gas, so that the ratio of specific heats and specific heats are constant:
 
-$$k = 1.4$$
+$$k = 1.4$$\
 $$c_p = 1005 \, \frac{\mathrm{J}}{\mathrm{kg} \cdot \mathrm{K}}$$
 
 Actual Compressor mass flow:
