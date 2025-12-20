@@ -5,7 +5,7 @@ title: Junseok Kang
 
 ## About Me
 
-![Profile Picture](/fa25-portfolio-Junny55/assets/images/IMG_6070.jpg)
+![Profile Picture](/fa25-portfolio-Junny55/assets/images/Screenshot 2025-12-20 at 8.58.38 AM.png)
 
  
 My name is Junseok Kang, and I am a student studying mechnical engineering in Cornell University, who is highly interested in aerospace technology. In high school, I've built rockets, and in university I'm building a race car in Cornell FSAE Racing Team.
