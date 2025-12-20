@@ -98,39 +98,50 @@ The turbocharger’s steady-state thermodynamic model, which I’ve elaborated a
 *Figure 4: S400SX compressor maps.*
 
 From the S400SX compressor map available online, I could select a typical mid-efficiency operating point (400-900HP):
+
 $$\Pi_c = 3.2$$
 $$\dot{m}_{\mathrm{corr}} = 72 \, \frac{\mathrm{lb}}{\mathrm{min}} = 0.54 \, \frac{\mathrm{kg}}{\mathrm{s}}$$
 $$\eta_c = 0.74$$
 
 Initial conditions I set:
+
 $$P_1 = 1 \, \mathrm{atm} = 101.3 \, \mathrm{kPa}$$
 $$T_1 = 25^\circ \mathrm{C} = 298 \, \mathrm{K}$$
 $$P_{\mathrm{ref}} = 101.3 \, \mathrm{kPa}, \, T_{\mathrm{ref}} = 288 \, \mathrm{K}$$
 
 Thermodynamic constants I used, assuming the air in the process acts like an ideal gas, so that the ratio of specific heats and specific heats are constant:
+
 $$k = 1.4$$
 $$c_p = 1005 \, \frac{\mathrm{J}}{\mathrm{kg} \cdot \mathrm{K}}$$
 
 Actual Compressor mass flow:
+
 $$\dot{m}_a = \dot{m}_{\mathrm{corr}} \sqrt{\frac{T_{\mathrm{ref}}}{T_1}} \frac{P_1}{P_{\mathrm{ref}}} = 0.54 \sqrt{\frac{288}{298}} \cdot 1 = 0.53 \, \frac{\mathrm{kg}}{\mathrm{s}}$$
 
 Isentropic outlet temperature:
+
 $$T_{2s} = T_1 \Pi_c^{\frac{k - 1}{k}} = 298 \cdot 3.2^{\frac{0.4}{1.4}} = 415 \, \mathrm{K}$$
 
 Actual outlet temperature, considering the compressor efficiency:
+
 $$T_2 = T_1 \left[1 + \frac{1}{\eta_c} \left( \Pi_c^{\frac{k - 1}{k}} - 1 \right) \right] = 298 \left[1 + \frac{1}{0.74} (1.364 - 1)\right] = 445.7 \, \mathrm{K}$$
 
 Compressor power needed for the S400SX turbocharger to operate at the selected operating point:
+
 $$W_c = \dot{m}_a c_p (T_2 - T_1) = 0.53 \cdot 1005 \cdot (445.7 - 298) = 78.7 \, \mathrm{kW}$$
 
 Assuming exhaust mass flow is approximately equal to intake air flow:
+
 $$\dot{m}_{\mathrm{exh}} \approx \dot{m}_a = 0.53 \, \frac{\mathrm{kg}}{\mathrm{s}}$$
+
 $$\dot{W}_c = \dot{m}_a c_p (T_1 - T_2) = -\dot{W}_t = -\dot{m}_{\mathrm{exh}} c_p (T_{(t,\mathrm{in})} - T_{(t,\mathrm{out})})$$
 
 Solving for exhaust temperature drop, which represents recovered exhaust enthalpy that would otherwise be wasted in a naturally aspirated engine:
+
 $$\Delta T_t = T_{(t,\mathrm{in})} - T_{(t,\mathrm{out})} = \frac{W_t}{\dot{m}_{\mathrm{exh}} c_p} = \frac{78.7 \cdot 1000}{0.53 \cdot 1005} = 147.8 \, \mathrm{K}$$
 
 Engine inlet gas temperature increases due to the compression in the turbocharger, which can be calculated as follows:
+
 $$\Delta T_c = T_2 - T_1 = 445.7 - 298 = 146.5 \, \mathrm{K} \approx \Delta T_t = 147.8 \, \mathrm{K}$$
 
 This calculation shows that the exhaust temperature drop due to the turbocharger turbine and the inlet gas temperature increases due to the turbocharger compressor match their value, which was expected by the model. Furthermore, the exhaust temperature drop due to the turbocharger usually ranges between 150K and 200K, which implies that the thermodynamic model of the turbocharger in this report is plausible. 
