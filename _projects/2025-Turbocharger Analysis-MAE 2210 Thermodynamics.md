@@ -23,14 +23,14 @@ In order to increase its power output and efficiency, lots of internal combustio
 Since in a naturally aspirated engine, approximately one-third of the fuel's chemical energy is lost as thermal waste through the exhaust, and turbochargers exploit the portion of this wasted enthalpy, turbochargers are used in many fields that require high performance of the internal combustion engine, such as motorsports, high-performance commercial automobiles, lightweight aircraft, and industrial fields. The BorgWarner S400SX turbocharger is commonly used in high-performance and heavy-duty engines due to its large compressor flow capacity and high-pressure ratio capability.
 
 <span style="font-size: 2em;"><strong>Thermodynamic Modeling of the Turbocharger</strong></span>\
-\
+
 
 ![Turbocharger System Diagram](/assets/images/Turbocharger_System%20Diagram.png)
 *Figure 2: Turbocharger system diagram.*
 
 **1.	Mass & Energy Balance in the Turbocharger’s Turbine**
 Steady State Mass Balance:
-$$\dot{m}_t = \dot{m}_{(t,\mathrm{in})} - \dot{m}_{(t,\mathrm{out})} = 0$$\
+$$\dot{m}_t = \dot{m}_{(t,\mathrm{in})} - \dot{m}_{(t,\mathrm{out})} = 0$$
 $$\dot{m}_{(t,\mathrm{in})} = \dot{m}_{(t,\mathrm{out})} = \dot{m}_{\mathrm{exh}}$$
 
 Steady State Energy Balance, assuming the turbocharger’s turbine is in an adiabatic process and assuming \( c_p \) is constant for the air in the process:
@@ -44,14 +44,14 @@ $$W_t \approx -W_c$$
 
 **2. Mass & Energy Balance in the Turbocharger’s Compressor**
 Steady State Mass Balance:
-$$\dot{m}_c = \dot{m}_{(c,\mathrm{in})} - \dot{m}_{(c,\mathrm{out})} = 0$$\
+$$\dot{m}_c = \dot{m}_{(c,\mathrm{in})} - \dot{m}_{(c,\mathrm{out})} = 0$$
 $$\dot{m}_{(c,\mathrm{in})} = \dot{m}_{(c,\mathrm{out})} = \dot{m}_a$$
 
 Steady State Energy Balance, assuming the compressor is in an adiabatic process and assuming \( c_p \) is constant for the air:
 $$\dot{Q}_c = 0$$
 $$\dot{E}_c = \dot{Q}_c - \dot{W}_c + \dot{m}_a (h_1 - h_2) = -\dot{W}_c + \dot{m}_a c_p (T_1 - T_2) = 0$$
 Thus, we can write the actual compressor work and convert it into an equation about \( T_2 \), which is the compressor outlet temperature:
-$$\dot{W}_c = \dot{m}_a c_p (T_1 - T_2) = -\dot{m}_{\mathrm{exh}} c_p (T_{(t,\mathrm{in})} - T_{(t,\mathrm{out})})$$\
+$$\dot{W}_c = \dot{m}_a c_p (T_1 - T_2) = -\dot{m}_{\mathrm{exh}} c_p (T_{(t,\mathrm{in})} - T_{(t,\mathrm{out})})$$
 $$T_2 = T_1 - \frac{\dot{m}_{\mathrm{exh}}}{\dot{m}_a} (T_{(t,\mathrm{in})} - T_{(t,\mathrm{out})})$$
 
 **3. Calculate Compressor Outlet Temperature**
@@ -63,7 +63,7 @@ Since the compressor process in the turbocharger won’t be reversible in real l
 $$T_2 = T_1 \left[1 + \frac{1}{\eta_c} \left( \Pi_c^{\frac{k-1}{k}} - 1 \right) \right] = T_1 - \frac{\dot{m}_{\mathrm{exh}}}{\dot{m}_a} (T_{(t,\mathrm{in})} - T_{(t,\mathrm{out})})$$
 
 Since S400SX maps use corrected airflow, I had to convert the corrected airflow into the actual airflow that is input to the turbocharger compressor, where \( T_{\mathrm{ref}} = 288 \, \mathrm{K} \), \( P_{\mathrm{ref}} = 101.3 \, \mathrm{kPa} \):
-$$\dot{m}_{\mathrm{corr}} = \dot{m}_a \sqrt{\frac{T_{(c,\mathrm{in})}}{T_{\mathrm{ref}}}} \frac{P_{\mathrm{ref}}}{P_{(c,\mathrm{in})}}$$\
+$$\dot{m}_{\mathrm{corr}} = \dot{m}_a \sqrt{\frac{T_{(c,\mathrm{in})}}{T_{\mathrm{ref}}}} \frac{P_{\mathrm{ref}}}{P_{(c,\mathrm{in})}}$$
 $$\dot{m}_a = \dot{m}_{\mathrm{corr}} \sqrt{\frac{T_{\mathrm{ref}}}{T_{(c,\mathrm{in})}}} \frac{P_{(c,\mathrm{in})}}{P_{\mathrm{ref}}}$$
 
 <span style="font-size: 2em;"><strong>Specific Turbocharger, S400SX, Data and Modeling</strong></span>
