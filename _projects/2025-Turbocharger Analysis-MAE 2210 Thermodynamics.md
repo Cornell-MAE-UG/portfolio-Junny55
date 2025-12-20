@@ -46,30 +46,44 @@ Thus, we can see that the turbine power comes from exhaust enthalpy:
 $$\dot{W}_t = \dot{m}_{\text{exh}} c_p (T_{\text{t,in}} - T_{\text{t,out}})$$
 
 For a turbocharger, since the turbine and the compressor are directly connected through a crankshaft, the mechanical work will be transferred from the turbine to the compressor. Moreover, since the turbine power output is the power input for the compressor, the sign is positive for turbine power but should be negative for the compressor power:
+
 $$\dot{W}_t \approx -\dot{W}_c$$
 
 **2. Mass & Energy Balance in the Turbocharger’s Compressor**
 Steady State Mass Balance:
+
 $$\dot{m}_c = \dot{m}_{\text{c,in}} - \dot{m}_{\text{c,out}} = 0$$
+
 $$\dot{m}_{\text{c,in}} = \dot{m}_{\text{c,out}} = \dot{m}_a$$
 
 Steady State Energy Balance, assuming the compressor is in an adiabatic process and assuming \( c_p \) is constant for the air:
+
 $$\dot{Q}_c = 0$$
+
 $$\dot{E}_c = \dot{Q}_c - \dot{W}_c + \dot{m}_a (h_1 - h_2) = -\dot{W}_c + \dot{m}_a c_p (T_1 - T_2) = 0$$
+
 Thus, we can write the actual compressor work and convert it into an equation about \( T_2 \), which is the compressor outlet temperature:
+
 $$\dot{W}_c = \dot{m}_a c_p (T_1 - T_2) = -\dot{m}_{\text{exh}} c_p (T_{\text{t,in}} - T_{\text{t,out}})$$
+
 $$T_2 = T_1 - \frac{\dot{m}_{\text{exh}}}{\dot{m}_a} (T_{\text{t,in}} - T_{\text{t,out}})$$
 
 **3. Calculate Compressor Outlet Temperature**
 Let’s assume adiabatic compression in the turbocharger compressor as above, and assume the air in the process acts like an ideal gas. Therefore, we can use the isentropic ideal gas relation to calculate the isentropic compressor output temperature based on the pressure ratio of the turbocharger and the specific heat ratio of the air.\
 Isentropic compressor outlet temperature:
+
 $$T_{2s} = T_1 \Pi_c^{\frac{k-1}{k}}$$
 
 Since the compressor process in the turbocharger won’t be reversible in real life, using the isentropic of the compressor, the actual compressor outlet temperature can be written like the following equation, where \( k \approx 1.4 \) for air and \( \eta_c \) can be taken directly from the compressor map:
+
 $$T_2 = T_1 \left[ 1 + \frac{1}{\eta_c} \left( \Pi_c^{\frac{k-1}{k}} - 1 \right) \right] = T_1 - \frac{\dot{m}_{\text{exh}}}{\dot{m}_a} (T_{\text{t,in}} - T_{\text{t,out}})$$
 
-Since S400SX maps use corrected airflow, I had to convert the corrected airflow into the actual airflow that is input to the turbocharger compressor, where $T_{\text{ref}} = 288 \text{ K}$ and $P_{\text{ref}} = 101.3 \text{ kPa}$:
+Since S400SX maps use corrected airflow, I had to convert the corrected airflow into the actual airflow that is input to the turbocharger compressor, where 
+
+$T_{\text{ref}} = 288 \text{ K}$ and $P_{\text{ref}} = 101.3 \text{ kPa}$:
+
 $$\dot{m}_{\text{corr}} = \dot{m}_a \sqrt{\frac{T_{\text{c,in}}}{T_{\text{ref}}}} \cdot \left( \frac{P_{\text{ref}}}{P_{\text{c,in}}} \right)$$
+
 $$\dot{m}_a = \dot{m}_{\text{corr}} \sqrt{\frac{T_{\text{ref}}}{T_{\text{c,in}}}} \cdot \left( \frac{P_{\text{c,in}}}{P_{\text{ref}}} \right)$$
 
 <span style="font-size: 2em;"><strong>Specific Turbocharger, S400SX, Data and Modeling</strong></span>
