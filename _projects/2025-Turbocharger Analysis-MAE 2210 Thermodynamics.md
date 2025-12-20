@@ -145,3 +145,12 @@ Engine inlet gas temperature increases due to the compression in the turbocharge
 $$\Delta T_c = T_2 - T_1 = 445.7 - 298 = 146.5 \, \mathrm{K} \approx \Delta T_t = 147.8 \, \mathrm{K}$$
 
 This calculation shows that the exhaust temperature drop due to the turbocharger turbine and the inlet gas temperature increases due to the turbocharger compressor match their value, which was expected by the model. Furthermore, the exhaust temperature drop due to the turbocharger usually ranges between 150K and 200K, which implies that the thermodynamic model of the turbocharger in this report is plausible. 
+
+
+<span style="font-size: 2.5em;"><strong>Turbocharger VS Supercharger</strong></span>
+ \
+A turbocharger usually has higher efficiency than a supercharger, which is another type of compressor that is commonly used for internal combustion engines to enhance the engine’s efficiency under piston displacement constraints. Both turbocharger and supercharger induce forced induction, which means both compress the input air of the internal combustion engine, allowing the engine to get more oxygen, which helps it to run more efficiently as a result. However, Turbochargers and superchargers differ primarily in the way they generate power. As discussed above, turbochargers exploit thermal and kinetic energy of the exhaust gas through the turbine blades and convert it to mechanical work, which will be used to compress the inlet air via the compressor blades. Unlike a turbocharger, a supercharger’s crankshaft is directly connected via gear or belt to the crankshaft of the internal combustion engine, meaning the net work output of the engine is reduced by the work required to drive the supercharger. The thermodynamic energy balance for a supercharged engine is expressed as:
+
+$$\dot{W}_{\text{net}} = \dot{W}_{\text{0}} - (\dot{W}_{\text{friction}} + \dot{W}_{\text{pumping}} + \dot{W}_{\text{supercharger_drive}})$$
+
+Therefore, since the turbocharger does not subtract power directly from the engine’s crankshaft and instead uses the exhaust’s “wasted” energy that has already performed its primary work in the engine’s combustion chamber, the turbocharger provides higher efficiency that supercharger. 
