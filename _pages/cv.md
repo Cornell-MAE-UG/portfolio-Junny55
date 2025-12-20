@@ -5,7 +5,7 @@ permalink: /cv/
 ---
 ## Curriculum Vitae
 
-[Download my CV]({{ "/assets/CV.pdf" | relative_url }}) in PDF format.
+[Download my CV]({{ "/assets/Cornell Junseok Kang Resume.pdf" | relative_url }}) in PDF format.
 
 
 **Email:** [jk2964@cornell.edu](mailto:jk2964@cornell.edu) | | | **Phone:** +949 945 0352
@@ -63,7 +63,7 @@ Aspiring engineering student with a strong foundation in Physics and Mechanical 
 ---
 
 #### Extracurricular Activities
-- Member of Cornell FSAE Racing Team]  
+- Member of Cornell FSAE Racing Team  
 - Volunteer for [Event/Organization Name]  
 
 ---
