@@ -1,6 +1,6 @@
 ---
 layout: default
-title: <Your Name> - Curriculum Vitae
+title: Junseok Kang - Curriculum Vitae
 permalink: /cv/
 ---
 ## Curriculum Vitae
@@ -8,30 +8,30 @@ permalink: /cv/
 [Download my CV]({{ "/assets/CV.pdf" | relative_url }}) in PDF format.
 
 
-**Email:** [netID@cornell.edu](mailto:netID@cornell.edu) | | | **Phone:** +123 456 7890
+**Email:** [jk2964@cornell.edu](mailto:jk2964@cornell.edu) | | | **Phone:** +949 945 0352
 
 ---
 
 #### Objective
-Aspiring engineering student with a strong foundation in.... Passionate about ... and eager to apply my knowledge in real-world applications.
+Aspiring engineering student with a strong foundation in Physics and Mechanical Design Passionate about Aersoapce Engineering and eager to apply my knowledge in real-world applications.
 
 ---
 
 #### Education
 - **Cornell University**  
   *Bachelor of Science in Mechanical and Aerospace Engineering*  
-  GPA: 3.8/4.0 | Graduation: Month, Year
+  GPA: 4.07/4.0 | Graduation: Aug, 2028
 
-- **[High School Name]**  
+- **Korean Minjok Leadership Academy**  
   *High School Diploma*  
-  Graduation: [Month, Year]
+  Graduation: [Mar, 2024]
 
 ---
 
 #### Skills
 - **Software:** Autodesk Fusion 360, SolidWorks, ANSYS  
 - **Programming:** Python, MATLAB  
-- **Tools:** 3D Printing, Laser Cutting  
+- **Tools:** 3D Printing, Laser Cutting, Machinging using Manual Mill  
 
 ---
 
@@ -63,7 +63,7 @@ Aspiring engineering student with a strong foundation in.... Passionate about ..
 ---
 
 #### Extracurricular Activities
-- Member of [Club/Organization Name]  
+- Member of Cornell FSAE Racing Team]  
 - Volunteer for [Event/Organization Name]  
 
 ---
