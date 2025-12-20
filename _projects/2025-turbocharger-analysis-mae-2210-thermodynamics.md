@@ -28,7 +28,7 @@ Since in a naturally aspirated engine, approximately one-third of the fuel's che
 **1.	Mass & Energy Balance in the Turbocharger’s Turbine**\
 Steady State Mass Balance:
 
-$$\dot{m}_t = \dot{m}_{\text{t,in}} - \dot{m}_{\text{t,out}} = 0$$
+$$\dot{m}_t = \dot{m}_{\text{t,in}} - \dot{m}_{\text{t,out}} = 0$$\
 $$\dot{m}_{\text{t,in}} = \dot{m}_{\text{t,out}} = \dot{m}_{\text{exh}}$$
 
 
@@ -37,7 +37,7 @@ Steady State Energy Balance, assuming the turbocharger’s turbine is in an adia
 $$\dot{Q}_t = 0$$
 $$\dot{E}_t = \dot{Q}_t - \dot{W}_t + \dot{m}_{\text{exh}} (h_{\text{t,in}} - h_{\text{t,out}}) = -\dot{W}_t + \dot{m}_{\text{exh}} c_p (T_{\text{t,in}} - T_{\text{t,out}}) = 0$$
 
- /
+
 Thus, we can see that the turbine power comes from exhaust enthalpy:
 
 $$\dot{W}_t = \dot{m}_{\text{exh}} c_p (T_{\text{t,in}} - T_{\text{t,out}})$$
@@ -77,7 +77,7 @@ $$T_2 = T_1 \left[ 1 + \frac{1}{\eta_c} \left( \Pi_c^{\frac{k-1}{k}} - 1 \right)
 
 Since S400SX maps use corrected airflow, I had to convert the corrected airflow into the actual airflow that is input to the turbocharger compressor, where 
 
-$T_{\text{ref}} = 288 \text{ K}$ and $P_{\text{ref}} = 101.3 \text{ kPa}$:
+$$T_{\text{ref}} = 288 \text{ K}$ and $P_{\text{ref}} = 101.3 \text{ kPa}$$ :
 
 $$\dot{m}_{\text{corr}} = \dot{m}_a \sqrt{\frac{T_{\text{c,in}}}{T_{\text{ref}}}} \cdot \left( \frac{P_{\text{ref}}}{P_{\text{c,in}}} \right)$$
 
