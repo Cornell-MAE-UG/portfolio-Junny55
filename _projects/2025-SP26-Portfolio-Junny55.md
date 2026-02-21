@@ -27,61 +27,58 @@ Spring 2026
 
 ## Team & Clients
 
-Team: Pest Control Clients: Cornell CALS Extension / E&J Gallo Winery / National Grape 
+Team: Pest Control  
+Clients: Cornell CALS Extension / E&J Gallo Winery / National Grape
 
 ## Problem
 
-Problem: Viticulturalists in New York State are affected by the spotted lantern fly infestation, an invasive species that contaminates the harvest. Batches are rejected from juiceries and wineries, resulting in economic loss. Traditional pest-control methods are insufficient. Pesticides come with high economic and environmental costs. Egg removal proves too difficult because of the massive scale of laying locations, costing too much in labor. 
+Viticulturalists in New York State are affected by the spotted lantern fly infestation, an invasive species that contaminates the harvest. Batches are rejected from juiceries and wineries, resulting in economic loss. Traditional pest-control methods are insufficient. Pesticides come with high economic and environmental costs. Egg removal proves too difficult because of the massive scale of laying locations, costing too much in labor.
 
 ## Impact
 
-Impact: Reducing SLF contamination in harvest improves economic output. Currently, farmers rely on insecticide rotations, but a mechanical device would offer a low-chemical alternative and reduce the cost of expensive sprays while meeting the growing consumer demand. 
+Reducing SLF contamination in harvest improves economic output. Currently, farmers rely on insecticide rotations, but a mechanical device would offer a low-chemical alternative and reduce the cost of expensive sprays while meeting the growing consumer demand. 
 
 ---
 
 ## Solution
 
-Solution: Centrifugal Density Separator- A high-speed rotation device that separates harvested grapes from SLF by density, removing them from the desired product. 
+Centrifugal Density Separator - A high-speed rotation device that separates harvested grapes from SLF by density, removing them from the desired product.
 
 ## How to Implement
 
-How to implement: Harvest is loaded into the device, and an internal drum spins at a calculated RPM. Heavier grapes are pushed out furthest, sliding down the angled outer walls into a collection bin. Lighter insects get pulled into a secondary bag. This way, grape pulp is conserved without contamination. 
+Harvest is loaded into the device, and an internal drum spins at a calculated RPM. Heavier grapes are pushed out furthest, sliding down the angled outer walls into a collection bin. Lighter insects get pulled into a secondary bag. This way, grape pulp is conserved without contamination.
 
 ## Why It's Better Than the Status Quo
 
-Why it's better than the status quo: Pesticides leave a taint on the wine's taste profile and contaminate the organic integrity of the grapes. Manual sorting is slow, costly, and prone to human error/inconsistencies. Our solution is non-chemical and efficient on a large scale.
+Pesticides leave a taint on the wine's taste profile and contaminate the organic integrity of the grapes. Manual sorting is slow, costly, and prone to human error/inconsistencies. Our solution is non-chemical and efficient on a large scale.
 
 ## End-of-Semester Proof-of-Concept
 
-End-of-semester proof-of-concept: A benchtop rotating drum prototype using grapes and 3D printed SLF accurate to weight and size, allowing us to optimize RPM. Success is determined by comparing the percentage of pests (SLF models) successfully sorted with the percentage of harvest lost.
+A benchtop rotating drum prototype using grapes and 3D printed SLF accurate to weight and size, allowing us to optimize RPM. Success is determined by comparing the percentage of pests (SLF models) successfully sorted with the percentage of harvest lost.
 
 ## Key Risks/Unknowns
 
-Key risks/unknowns:
-
 ### Damage to Grapes
 
-Damage to grapes: A high RPM exerts a force on the grape skin, possibly causing the grapes to break apart. Assessing the damage to grapes requires a physical "Burst Test," spinning grapes at incremental RPMs to identify when skins rupture, then comparing our results to the RPM needed to separate SLF.
+A high RPM exerts a force on the grape skin, possibly causing the grapes to break apart. Assessing the damage to grapes requires a physical "Burst Test," spinning grapes at incremental RPMs to identify when skins rupture, then comparing our results to the RPM needed to separate SLF.
 
 ### Mass Variation and Obstructions
 
-Mass variation and obstructions: While a dry lanternfly is less dense than a grape, a lanternfly soaked in grape juice is much denser. Similarly, an SLF wedged inside a tight cluster might not separate easily, resulting in less effective separation. We can test this by using "weighted" objects (3D-printed bugs with adhesive, SLF tucked inside dense clusters or higher-density SLF), measuring SLF removed per cycle at various degrees of obstruction.
+While a dry lanternfly is less dense than a grape, a lanternfly soaked in grape juice is much denser. Similarly, an SLF wedged inside a tight cluster might not separate easily, resulting in less effective separation. We can test this by using "weighted" objects (3D-printed bugs with adhesive, SLF tucked inside dense clusters or higher-density SLF), measuring SLF removed per cycle at various degrees of obstruction.
 
 ### Processing Time
 
-Processing time: A centrifuge is often a batch process, and if the device takes too long to load, spin, and unload, farmers will reject it in favor of faster methods. To address this, we will test the time the cycle duration of our prototype, and calculate the throughput to compare it to standard manual sorting speeds.
+A centrifuge is often a batch process, and if the device takes too long to load, spin, and unload, farmers will reject it in favor of faster methods. To address this, we will test the time the cycle duration of our prototype, and calculate the throughput to compare it to standard manual sorting speeds.
 
 ## Questions for the Client
 
-Questions for the client
+**How much material other than grapes, like stems and leaves, typically remains in the bin after your primary harvest?** This changes our separation threshold and testing parameters based on what we want to separate/how much grapes weigh.
 
-How much material other than grapes, like stems and leaves, typically remains in the bin after your primary harvest? This changes our separation threshold and testing parameters based on what we want to separate/how much grapes weigh.
+**What is the maximum holding time allowed between the grape being picked and it reaching the crusher before you worry about quality loss?** This determines the constraints of our time trials and whether or not our product is viable in the time scale of grape processing.
 
-What is the maximum holding time allowed between the grape being picked and it reaching the crusher before you worry about quality loss? This determines the constraints of our time trials and whether or not our product is viable in the time scale of grape processing.
+**Do the SLF tend to stay on the surface of the grape clusters when disturbed, or do they retreat deep into the center of the bunch?** This affects the "ramping profile" (i.e. how fast we accelerate) based on how hard SLF tends to stay on grapes, and also how we simulate SLF in our separation experiments.
 
-Do the SLF tend to stay on the surface of the grape clusters when disturbed, or do they retreat deep into the center of the bunch? This affects the "ramping profile" (i.e. how fast we accelerate) based on how hard SLF tends to stay on grapes, and also how we simulate SLF in our separation experiments.
-
-What reservations does this idea leave you with as a client? (Any issues we haven't thought of?)
+**What reservations does this idea leave you with as a client?** (Any issues we haven't thought of?)
 
 ---
 
